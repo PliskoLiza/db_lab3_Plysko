@@ -1,7 +1,7 @@
 import psycopg2
 import matplotlib.pyplot as plt
 
-username = 'Plysko'
+username = 'postgres'
 password = '1234'
 database = 'Lab_2_DB'
 host = 'localhost'
@@ -10,8 +10,7 @@ port = '5432'
 query_1 = '''
 create view OscarsTotal as
 SELECT film_name, quantity FROM 
-(filmawards INNER JOIN film ON film.film_id = filmawards.film_id) 
-ORDER BY filmawards.quantity
+(filmawards INNER JOIN film ON film.film_id = filmawards.film_id)
 '''
 
 query_2 = '''
