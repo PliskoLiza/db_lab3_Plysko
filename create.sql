@@ -26,7 +26,7 @@ CREATE TABLE FilmAwards
 CREATE TABLE FilmRating
 (
   film_id       int        NOT NULL ,
-  platform_id   char(10)   NULL ,
+  platform_id   char(50)   NULL ,
   rating_date   date       NULL ,
   rating        NUMERIC    NULL
 );
